@@ -1,3 +1,4 @@
+@import "../../sass/common.scss";
 .App {
   text-align: center;
 }
@@ -21,6 +22,24 @@
 
 .App-link {
   color: #61dafb;
+}
+
+
+.App-2 {
+  font-family: SFProText-SemiBold;
+  font-size: 20px;
+}
+.App-3 {
+  font-family: SFProText-Regular;
+  font-size: 20px;
+}
+.App-4 {
+  font-family: SFProText-Medium;
+  font-size: 20px;
+}
+.App-5 {
+  font-family: SFProText-Bold;
+  font-size: 20px;
 }
 
 @keyframes App-logo-spin {
