@@ -1,7 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
+import './sass/common.scss';
 import { BrowserRouter } from 'react-router-dom';
 import Home from './components/home/Home';
 // import 'styles/_colors.scss'; // assuming a styles directory under src/

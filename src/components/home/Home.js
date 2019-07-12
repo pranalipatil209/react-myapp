@@ -1,29 +1,16 @@
 import React from 'react';
-import Api from '../../api';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from '../card/Card';
-// import { Switch, Route, Link } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom';
+import cardCanvas from '../card-canvas/cardCanvas';
+import singleCard from '../single-card/singleCard';
 
 class Home extends React.Component {
 	render() {
 		return(
 			<div>
-				<Container fluid={true}>
-					<Row>
-						{/*<Col>Hiee</Col>*/}
-						{/*<Col>Hiee</Col>*/}
-						{/*<Col>Hiee</Col>*/}
-						{
-							Api.all().map(p=>(
-								<Col md={4}>
-									<Card dataProp={p} />
-								</Col>
-							))
-						}
-					</Row>
-				</Container>
+				<Switch>
+					<Route exact path='/' component={cardCanvas}/>
+					<Route exact path='/:name' component={singleCard}/>
+				</Switch>
 			</div>
 		)
 	}
